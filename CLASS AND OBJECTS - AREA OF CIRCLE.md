@@ -27,17 +27,26 @@ To write a Python program to take the radius from the user and find the area of 
 
 ### PROGRAM
 
-```
-
-
-
+```python
+import math
+class umbrella:
+    def __init__(self, r):
+        self.r = r
+    def rain(self):
+        area = math.pi * self.r ** 2
+        print(f"Area of the circle: {area:.2f}")
+r = int(input("Enter the radius of the circle: "))
+u = umbrella(r)
+u.rain()
 ```
 
 ### OUTPUT
 
-
+![Screenshot 2025-05-02 094254](https://github.com/user-attachments/assets/5c349263-5d19-4a64-8207-dcd920323f41)
 
 ### RESULT
+
+Thus, The program successfully calculates and displays the area of a circle using a class-based approach.
 
 
 
