@@ -34,12 +34,44 @@ To write a Python program to perform addition and division operations using a cl
 
 ### PROGRAM
 
-```
+```python
+class Saveetha:
+    def __init__(self):
+        self.a = 0
+        self.b = 0
 
+    def setvalues(self):
+        self.a = int(input("Enter value for a: "))
+        self.b = int(input("Enter value for b: "))
 
+    def add(self):
+        return self.a + self.b
 
+    def div(self):
+        if self.b == 0:
+            return "Error: Division by zero"
+        return self.a / self.b
+
+obj = Saveetha()
+obj.setvalues()
+
+while True:
+    print("\n1. Add\n2. Divide\n0. Exit")
+    choice = input("Enter your choice: ")
+
+    if choice == '1':
+        print("Addition result:", obj.add())
+    elif choice == '2':
+        print("Division result:", obj.div())
+    elif choice == '0':
+        print("Exiting!")
+        break
+    else:
+        print("Invalid choice")
 ```
 
 ### OUTPUT
 
+
 ### RESULT
+Thus, the program executed successfuly and th eoutput is verified.
