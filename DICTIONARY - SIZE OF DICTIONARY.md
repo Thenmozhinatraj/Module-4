@@ -21,16 +21,22 @@ To write a Python program to print the size of a dictionary using `getsizeof()` 
 
 ### PROGRAM
 
-```
-#Reg.No
-#Name
+```python
+#Reg.No 212223060291
+#Name Thenmozhi N
 #Add Your Code Here
-
-
-
+import sys
+dic1 = {1: "a", 2: "b"}
+dic2 = {"name": "Alice", "age": 25, "city": "Paris"}
+dic3 = {}
+print(f"Size of dic1: {sys.getsizeof(dic1)} bytes")
+print(f"Size of dic2: {sys.getsizeof(dic2)} bytes")
+print(f"Size of dic3: {sys.getsizeof(dic3)} bytes")
 ```
 
 ### OUTPUT
 
+![Screenshot 2025-05-02 121731](https://github.com/user-attachments/assets/01220514-c5cc-4759-a21b-6a4ff3bc95b0)
 
 ### RESULT
+Thus, the program executed successfully and the output is verified.
