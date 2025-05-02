@@ -71,7 +71,7 @@ while True:
 ```
 
 ### OUTPUT
-
+![Screenshot 2025-05-02 122758](https://github.com/user-attachments/assets/1d5f619d-6b13-4f51-81e3-1e75bf556c39)
 
 ### RESULT
 Thus, the program executed successfuly and th eoutput is verified.
