@@ -44,7 +44,6 @@ def character_frequency(file_path):
         d1[ch] += 1
     return d1
 
-# Example usage
 file_path = "sample.txt"
 content = "Hello, World!"
 create_file(file_path, content)
