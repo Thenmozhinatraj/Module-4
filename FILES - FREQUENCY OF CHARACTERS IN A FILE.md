@@ -32,31 +32,29 @@ To write a Python program that reads a file and counts the frequency of each cha
 ```python
 from collections import defaultdict
 
+
 def create_file(file_path, content):
-    with open(file_path, 'w') as f:
-        f.write(content)
+    with open(file_path, 'w') as file:
+        file.write(content)
 
-def character_frequency(file_path):
-    with open(file_path, 'r') as f:
-        content = f.read()
-    d1 = defaultdict(int)
-    for ch in content:
-        d1[ch] += 1
-    return d1
-
-file_path = "sample.txt"
-content = "Hello, World!"
-create_file(file_path, content)
-freq = character_frequency(file_path)
-print("Character Frequencies:")
-for char, count in freq.items():
-    print(f"'{char}': {count}")
+# Function to calculate character frequencies
+def char_frequency(file_path):
+    char_count=defaultdict(int)
+    with open(file_path,'r')as file:
+        for line in file:
+            for char in line:
+                char_count[char]+=1
+    return char_count
+file_path="example.txt"
+file_content="saveetha engineering college"
+create_file(file_path,file_content)
 ```
 
 
 ### OUTPUT
 
-![Screenshot 2025-05-02 122413](https://github.com/user-attachments/assets/8c6477ed-1259-4212-ba7c-b4cf8df3c9e3)
+![image](https://github.com/user-attachments/assets/7d1a061f-9251-4cd6-9912-b6d2ddd39802)
+
 
 ### RESULT
-Thus, the program executed successfully and the output is verified.
+Thus , a Python program that reads a file and counts the frequency of each character in it are verified.
