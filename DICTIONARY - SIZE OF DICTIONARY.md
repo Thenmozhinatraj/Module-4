@@ -25,18 +25,20 @@ To write a Python program to print the size of a dictionary using `getsizeof()` 
 #Reg.No 212223060291
 #Name Thenmozhi N
 #Add Your Code Here
-import sys
-dic1 = {1: "a", 2: "b"}
-dic2 = {"name": "Alice", "age": 25, "city": "Paris"}
-dic3 = {}
-print(f"Size of dic1: {sys.getsizeof(dic1)} bytes")
-print(f"Size of dic2: {sys.getsizeof(dic2)} bytes")
-print(f"Size of dic3: {sys.getsizeof(dic3)} bytes")
+from sys import getsizeof
+dic1 = {"A": 1, "B": 2, "C": 3} 
+
+dic2 = {"Geek1": "Raju", "Geek2": "Nikhil", "Geek3": "Deepanshu"}
+
+dic3 = {1: "Lion", 2: "Tiger", 3: "Fox", 4: "Wolf"}
+print(f"Size of dic1: {getsizeof(dic1)}bytes")
+print(f"Size of dic2: {getsizeof(dic2)}bytes")
+print(f"Size of dic3: {getsizeof(dic2)}bytes")
 ```
 
 ### OUTPUT
 
-![Screenshot 2025-05-02 121731](https://github.com/user-attachments/assets/01220514-c5cc-4759-a21b-6a4ff3bc95b0)
+![image](https://github.com/user-attachments/assets/e97adca9-c8e3-4636-8e3c-d4f5dbbe207e)
 
 ### RESULT
 Thus, the program executed successfully and the output is verified.
